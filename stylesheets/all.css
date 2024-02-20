@@ -66,7 +66,7 @@
   --bs-dark-border-subtle: #adb5bd;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: "Oswald", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -287,7 +287,6 @@
 
 .container,
 .container-fluid,
-.container-xxl,
 .container-xl,
 .container-lg,
 .container-md,
@@ -318,12 +317,7 @@
 }
 @media (min-width: 1200px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1140px;
-  }
-}
-@media (min-width: 1400px) {
-  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1320px;
+    max-width: 1110px;
   }
 }
 :root {
@@ -8430,12 +8424,12 @@ ul {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 350px;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 366px;
   border-radius: 100px 0 30px 0;
   background-color: #fff;
-  padding: 34px 40px 64px;
+  padding: 64px 40px;
   margin-bottom: 40px;
   box-shadow: 0px 3px 10px #d8d8d8;
   list-style: none;
@@ -8445,4 +8439,15 @@ ul {
 .multi-area li {
   line-height: 1;
   margin-bottom: 8px;
+}
+.multi-area li.multiplicand {
+  font-size: 128px;
+  line-height: 106px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px #fff, 6px 5px 0 #F0F0F0;
+}
+.multi-area li.multiplicand span {
+  line-height: 100px;
+  vertical-align: top;
 }/*# sourceMappingURL=all.css.map */

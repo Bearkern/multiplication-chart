@@ -11,12 +11,12 @@ ul {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 350px;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 366px;
   border-radius: 100px 0 30px 0;
   background-color: #fff;
-  padding: 34px 40px 64px;
+  padding: 64px 40px;
   margin-bottom: 40px;
   box-shadow: 0px 3px 10px #d8d8d8;
   list-style: none;
@@ -25,5 +25,17 @@ ul {
   li {
     line-height: 1;
     margin-bottom: 8px;
+    &.multiplicand {
+      font-size: 128px;
+      line-height: 106px;
+      font-weight: bold;
+      text-align: center;
+      text-shadow: 2px 2px $white, 6px 5px 0 $gray-100;
+      span {
+        line-height: 100px;
+        vertical-align: top;
+      }
+    }
   }
 }
+
