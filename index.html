@@ -1,17 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="stylesheets/all.css">
-  <title>Document</title>
-</head>
-<body>
-  <main>
-    
-  </main>
-  <footer>
-    <p>Copyright © 2019 HexSchool. All rights reserved.</p>
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/all.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="bg-light">
+      <div class="container">
+        <ul class="row row-cols-3 pt-5 pb-5 list-unstyled" id="multiChart">
+          <li class="col d-flex flex-column justify-content-between">
+            <div
+              class="position-relative d-flex justify-content-between align-items-center text-success fs-4"
+            >
+              <span>×</span>
+              <span class="deco-line"></span>
+              <span>×</span>
+            </div>
+            <h1 class="text-center text-success">
+              <span class="display-4 fw-bold">九九乘法表</span>
+              <span class="fw-normal fs-4">MULTIPLICATION CHART</span>
+            </h1>
+            <div
+              class="position-relative d-flex justify-content-between align-items-center text-success fs-4"
+            >
+              <span>×</span>
+              <span class="deco-line"></span>
+              <span>×</span>
+            </div>
+          </li>
+          <li class="col">
+            <ul class="multi-area">
+              <li class="multiplicand mb-0 fw-bold text-center" style="font-size: 128px">2</li>
+              <li>2 × 1 = 2</li>
+              <li>2 × 2 = 4</li>
+              <li>2 × 3 = 6</li>
+              <li>2 × 4 = 8</li>
+              <li>2 × 5 = 10</li>
+              <li>2 × 6 = 12</li>
+              <li>2 × 7 = 14</li>
+              <li>2 × 8 = 16</li>
+              <li>2 × 9 = 18</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer class="bg-success">
+      <div class="container clearfix">
+        <p class="text-white pt-2 pb-2 m-0 float-end">
+          Copyright © 2019 HexSchool. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
 </html>

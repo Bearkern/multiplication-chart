@@ -1,0 +1,18 @@
+const multiChart = document.getElementById('multiChart');
+console.log('multiChart:', multiChart);
+
+for (let x = 2; x < 10; x++) {
+  const multiArea = document.createElement('li');
+  multiArea.setAttribute('class', 'col');
+
+  const ul = document.createElement('ul');
+  ul.setAttribute('class', 'multi-area')
+  ul.innerHTML = `<li class="multiplicand mb-0 fw-bold text-center" style="font-size: 128px;">${x}</li>`;
+
+  for (let y = 1; y < 10; y++) {
+    ul.innerHTML += 
+      `<li>${x} × ${y} = ${x * y}</li>`;
+    multiArea.appendChild(ul);
+  }
+  multiChart.appendChild(multiArea)
+}
