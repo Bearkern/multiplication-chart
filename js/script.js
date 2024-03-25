@@ -9,9 +9,10 @@ for (let x = 2; x < 10; x++) {
   multiArea.innerHTML = `<li class="multiplicand"><span>${x}</span></li>`;
 
   for (let y = 1; y < 10; y++) {
-    multiArea.innerHTML += 
+    multiArea.innerHTML +=
       `<li>${x} × ${y} = ${x * y}</li>`;
-    multiWrapper.appendChild(multiArea);
   }
+  
+  multiWrapper.appendChild(multiArea);
   multiChart.appendChild(multiWrapper);
 }
